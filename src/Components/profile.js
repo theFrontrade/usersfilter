@@ -3,6 +3,7 @@ import Header from "./header";
 import { useState, useEffect } from "react";
 import results from "./mydata.json";
 import { useParams } from "react-router-dom";
+import Footer from './Footer'
 const Profile = () => {
   const [myData, setMyData] = useState([]);
   const { uuid } = useParams();
@@ -69,6 +70,7 @@ const Profile = () => {
             </div>
           ))}
       </div>
+      <Footer />
     </div>
   );
 };
